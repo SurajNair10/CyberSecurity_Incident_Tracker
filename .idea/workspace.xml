@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6fd3f8ca-607b-4083-a803-28d9074f46c8" name="Changes" comment="Added GenAI module and moved it with incident-service module to a parent module">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/src/main/java/org/genai/genai/GenAIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/src/main/java/org/genai/genai/GenaiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/src/main/java/org/genai/genai/GroqService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/src/main/java/org/genai/genai/IncidentAnalysisRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/src/main/java/org/genai/genai/IncidentAnalysisResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genai-service/src/test/java/org/genai/genai/GenaiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/java/com/incident/incident_service/Incident.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/java/com/incident/incident_service/IncidentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/java/com/incident/incident_service/IncidentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/java/com/incident/incident_service/IncidentRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/java/com/incident/incident_service/IncidentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/java/com/incident/incident_service/IncidentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/java/com/incident/incident_service/IncidentServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/incident-service/src/test/java/com/incident/incident_service/IncidentServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incident/incident_service/Incident.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incident/incident_service/IncidentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incident/incident_service/IncidentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incident/incident_service/IncidentRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incident/incident_service/IncidentResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incident/incident_service/IncidentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/incident/incident_service/IncidentServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/incident/incident_service/IncidentServiceApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2yTGG19dkZHtd96oX7PIGB2Dacz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.incident-service [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.parent-project [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GenaiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.IncidentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;23&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/snair/OneDrive/Desktop/Projects/CyberSec Incident Tracker&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Spring Boot.GenaiApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="parent-project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="parent-project" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="parent-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="parent-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GenaiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="genai-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.genai.genai.GenaiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IncidentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="incident-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.incident.incident_service.IncidentServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="parent-project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fd3f8ca-607b-4083-a803-28d9074f46c8" name="Changes" comment="" />
+      <created>1749851049862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749851049862</updated>
+      <workItem from="1749851050909" duration="1782000" />
+      <workItem from="1749852849741" duration="187000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/incident-service" />
+    </ignored-roots>
+    <MESSAGE value="Added GenAI module and moved it with incident-service module to a parent module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GenAI module and moved it with incident-service module to a parent module" />
+  </component>
+</project>
